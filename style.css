@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-.work-sans {
+* {
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -9,20 +9,22 @@
 .header {
     background: rgba(255, 144, 14, 0.1);
     height: 1320px;
-    width: 100%;
-    margin-bottom: 130px;
+    width: 1920px;
+    /* margin-bottom: 130px; */
+    margin: 0 auto;
 }
 
 .home {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hleft {
     color: #131313;
-    width: 298px;
-    height: 50px;
-    font-size: 45px;
+    /* margin: 0 auto; */
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
@@ -30,5 +32,41 @@
     color: rgb(66, 66, 66);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    text-decoration: none;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.headerInfo {
+    /* align-items: center; */
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.htitle {
+    color: rgb(19, 19, 19);
+    font-size: 64px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hdescription {
+    color: rgb(114, 114, 114);
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+}
+
+.hbutton {
+    margin-top: 40px;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    width: 180px;
+    height: 63px;
+    color: white;
+}
+
+img {
+    margin-top: 50px;
+    margin: 50px aut0;
 }
