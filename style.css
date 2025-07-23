@@ -8,13 +8,13 @@
 
 .header {
     background: rgba(255, 144, 14, 0.1);
-    height: 1380px;
-    width: 1920px;
+    height: 1200px;
+    width: 100%;
 }
 
 .sec {
-    width: 1340px;
-    height: 1200px;
+    width: 90%;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     height: 200px;
-    width: 1340px;
+    width: 90%;
     /* margin: 0 auto; */
 }
 
@@ -46,8 +46,7 @@
     text-align: center;
     justify-content: center;
     height: 350px;
-    width: 1340px;
-    /* margin: 0 auto; */
+    width: 90%;
 }
 
 .htitle {
@@ -85,13 +84,13 @@ img {
 
 .hero {
     height: 700px;
-    width: 1920px;
-    margin-top: 100px;
+    width: 100%;
+    margin-top: 200px;
 }
 
 .heroweb {
     height: 700px;
-    width: 1340px;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -127,12 +126,12 @@ img {
 
 .bannersec {
     height: 700px;
-    width: 1920px;
+    width: 100%;
 }
 
 .banner {
     height: 700px;
-    width: 1340px;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -176,13 +175,13 @@ img {
 
 .facts {
     height: 700px;
-    width: 1920px;
+    width: 100%;
     margin-top: 400px;
 }
 
 .fact {
     height: 400px;
-    width: 1340px;
+    width: 90%;
     margin: 30px auto;
     display: grid;
     /* grid-template-columns: repeat(4,1fr); */
@@ -229,12 +228,12 @@ img {
 
 .sponsorsec {
     height: 400px;
-    width: 1920px;
+    width: 100%;
 }
 
 .sponsors {
     height: 400px;
-    width: 1360px;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
 }
@@ -258,16 +257,125 @@ img {
 
 .footer {
     height: 200px;
-    width: 1920px;
+    width: 100%;
 }
 
 .foot {
     height: 50px;
-    width: 900px;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     background-color: rgba(191, 179, 92, 0.2);
     border-radius: 8px;
     padding: 10px;
     color: #636060;
+}
+
+
+/* @media screen and (max-width: 576px) { */
+
+@media screen and (max-width: 576px) {
+    .home{
+        flex-direction: column;
+        height: 130px;
+    }
+    .hright{
+        gap: 40px;
+    }
+    .img{
+        padding-top: 70px;
+    }
+      .hero {
+        height: 1790px;
+        margin-top: 280px;
+    }
+    .heroweb{
+        width: 90%;
+    }
+    .image{
+         display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 8px;
+    }
+    .imagefeature{
+        /* padding-top: 100px;*/
+        padding-left: 2px; 
+        margin-top: 1210px;
+        margin-left: -352px;
+    }
+    .bannersec{
+        height: 1790px;
+    }
+    .banner{
+        flex-direction: column;
+        width: 84%;
+    }
+    .bimage{
+        width: 100%;
+        margin: 0;
+    }
+    .btn{
+        top: 60px;
+        right: -130px;
+    }
+    .factimagebox{
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+        margin-left: -26px;
+    }
+  
+    .sponsorimage{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .img-1{
+        padding-left: 20px;
+    }
+    .headerInfo {
+        justify-content: start;
+    }
+    .bcard{
+        width: auto;
+    }
+
+}
+
+
+/*@media screen and (min-width: 576px) and (max-width: 992px) {*/
+
+@media screen and (min-width:576px) and (max-width:1044px) {
+     .hero {
+         height: 1021px; 
+        display: grid;
+        margin-top: 200px;
+        grid-template-columns: repeat(1, 1fr);
+    } 
+    .heroweb{
+    flex-direction: column; 
+    padding-right: 40px;
+ } 
+    .imagefeature {
+        padding: 0px;
+        margin-left: 41px;
+        margin-top: 370px;
+    }
+     .bannersec{
+        height: 1790px;
+    }
+    .banner{
+        flex-direction: column;
+        width: 84%;
+    }
+    .factimagebox{
+        margin-left: 30px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 12px;
+    }
+      .btn{
+        top: 24px;
+        right: -200px;
+    }
+    .bimage {
+    height: 980px;
+    width: 100%;
+}
 }
